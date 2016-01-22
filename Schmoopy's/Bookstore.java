@@ -15,7 +15,9 @@ public class Bookstore {
             int moreCustomers = keyboard.nextInt();
 
             if (moreCustomers == 1) {
-                
+                custormers = true;
+            } else {
+                System.exit(0);
             }
         }
 
