@@ -13,17 +13,13 @@ public class Bookstore {
         int moreCustomers = keyboard.nextInt();
 
         if (moreCustomers == 1) {
-            customers = true;
-        } else {
-            System.exit(0);
-        }
-        while (true) {
-           System.out.println("Books are $5 each. Bookmarks are $1 or a pack of 6 for $5, and painting " +
-           "of books are $100 each. There is a tax of 7%.");
-           System.out.println("What would you like to order today?");
+            System.out.println("Books are $5 each. Bookmarks are $1 or a pack of 6 for $5, and painting " +
+                    "of books are $100 each. There is a tax of 7%.");
+            System.out.println("What would you like to order today?");
 
             String order = keyboard.nextLine();
-            
+        } else {
+            System.exit(0);
         }
     }
 }
