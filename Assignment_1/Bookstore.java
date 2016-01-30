@@ -9,15 +9,23 @@ public class Bookstore {
 
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("Is there another customer in line? Press 1 for yes and 2 for no.");
+        System.out.println("More customers in line? Press 1 for yes and 2 for no. > ");
         int moreCustomers = keyboard.nextInt();
+
+        int numBooks = 0;
+        int numBookmarks = 0;
+        int numPaintings = 0;
 
         if (moreCustomers == 1) {
             System.out.println("Books are $5 each. Bookmarks are $1 or a pack of 6 for $5, and painting " +
                     "of books are $100 each. There is a tax of 7%.");
-            System.out.println("What would you like to order today?");
+            if (moreCustomers == 1) {
+                System.out.println("What would you like to order today?");
+                String order = keyboard.nextInt();
+                System.out.println("Currently in cart: " + order);
+            }
 
-            String order = keyboard.nextLine();
+
         } else {
             System.exit(0);
         }
