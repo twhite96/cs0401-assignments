@@ -4,9 +4,10 @@ import java.util.Scanner;
 public class Bookstore {
 
     public static void main(String[] args) {
-
+        
+        Bookstore b = new Bookstore();
         customers();
-        showInventory();
+        b.showInventory();
         order();
 
     public int customers() {
@@ -32,8 +33,13 @@ public class Bookstore {
 
     public void showInventory() {
 
-        System.out.println("What would you like to order today?" + "1 - Buy Books - $5.00 each" + "2 - Buy Bookmarks - $1 each, $5 for six-pack" +
-                "Buy Paintings of Books - $100 each" + "4 - See current order" + "5 Checkout");
+       System.out.println("What would you like to order today?");
+        System.out.println("1 - Buy Books - $5.00 each");
+        System.out.println("2 - Buy Bookmarks - $1 each, $5 for six-pack");
+        System.out.println("3 - Buy Paintings of Books - $100 each");
+        System.out.println("4 - See current order");
+        System.out.println("5 - Checkout");
+    }
 
     public int order() {
         Scanner keyboard = new Scanner(System.in);
@@ -43,9 +49,4 @@ public class Bookstore {
         int numPaintings = 0;
 
         numBooks = keyboard.nextInt();
-
-    }
-    }
-}
-
-
+        
