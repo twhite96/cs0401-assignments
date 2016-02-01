@@ -56,11 +56,11 @@ public class Bookstore {
         if (input == 1) {
             System.out.println("How many books would you like to order? > ");
             
-            int books = keyboard.nextInt();
+             numBooks = keyboard.nextInt();
         } else if (input == 2) {
             System.out.println("How many bookmarks would you like to order? > ");
             
-            int bookmarks = keyboard.nextInt();
+            numBookmarks = keyboard.nextInt();
         } else if (input == 3) {
             System.out.println("How many paintings would you like to order? > ");    
         }
