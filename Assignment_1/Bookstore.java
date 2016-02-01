@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 
 public class Bookstore {
-
+    
+     Scanner keyboard;
+     
+    this.keyboard = new Scanner(System.in);
+    
     public static void main(String[] args) {
         
         Bookstore b = new Bookstore();
@@ -11,8 +15,6 @@ public class Bookstore {
         order();
 
     public int customers() {
-
-        Scanner keyboard = new Scanner(System.in);
 
         boolean moreCustomers = false;
 
@@ -42,11 +44,29 @@ public class Bookstore {
     }
 
     public int order() {
-        Scanner keyboard = new Scanner(System.in);
-
+        
         int numBooks = 0;
         int numBookmarks = 0;
         int numPaintings = 0;
+        
+        System.out.println("What would you like to order? Please enter a valid option (1 through 5) > ");
+        
+        int input = keyboard.nextInt();
+        
+        if (input == 1) {
+            System.out.println("How many books would you like to order? > ");
+            
+            int books = keyboard.nextInt();
+        } else if (input == 2) {
+            System.out.println("How many bookmarks would you like to order? > ");
+            
+            int bookmarks = keyboard.nextInt();
+        } else if (input == 3) {
+            System.out.println("How many paintings would you like to order? > ");    
+        }
+        
 
-        numBooks = keyboard.nextInt();
+        
+
+        
         
