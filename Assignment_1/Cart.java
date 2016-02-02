@@ -8,29 +8,30 @@ public class Cart {
 
     public int addABook() {
         numBooks++;
-        return numBooks;
+     return numBooks;
     }
 
     public int removeABook() {
 
         if(numBooks > 0) {
             numBooks--;
-            return numBooks;
         }
+    return numBooks;
     }
 
     public int addBookmarks() {
         numBookmarks++;
-        return numBookmarks;
+      return numBookmarks;
     }
 
     public int removeBookmarks() {
         if (numBookmarks > 0) {
             numBookmarks--;
-            return numBookmarks;
         }
+    return numBookmarks;
     }
 
+    
     public int addPaintings() {
         numPaintings++;
         return numPaintings;
@@ -39,9 +40,9 @@ public class Cart {
     public int removeAPainting() {
         if (numPaintings > 0) {
             numPaintings--;
-            return numPaintings;
         }
+    return numPaintings;
     }
-}
+} 
 
 

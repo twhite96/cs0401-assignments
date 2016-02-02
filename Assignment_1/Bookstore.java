@@ -15,26 +15,27 @@ public class Bookstore {
         // start selling things
 
         b.startSelling();
+        
+        // 2 - show inventory
+        b.showInventory();
     }
 
     public static void startSelling() {
         
         Bookstore b = new Bookstore();
         
-        boolean customer;
+        boolean customer = false;
         do {
             // 1 - Create a new cart
             Cart cart = new Cart();
-            // 2 - show inventory
-            b.showInventory();
-
+            
             customer = b.moreCustomers();
         }
         //continues while there are more customers to be served
-        while (customer);
+        while (false);
     }
 
-    private boolean moreCustomers() {
+    public boolean moreCustomers() {
         System.out.println("Is there another customer?");
         System.out.println("Press 1 for Yes and 2 for No > ");
         boolean validAnswer = false;
