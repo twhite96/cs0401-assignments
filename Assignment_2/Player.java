@@ -6,7 +6,13 @@ public class Player {
         
     }
     public static void createFile(String filename) throws IOException {
-    File player = new File(fileName);
-    Scanner keyboard = new Scanner(player);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What your name? > ");
+        String input = sc.nextLine();
+        File file = new File(input);
+        
+        if(!file.exists()) {
+            file.createNewFile(input);   
+        }
     }
  
