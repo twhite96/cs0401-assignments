@@ -28,19 +28,19 @@ public class Player {
          this.handsPlayed += handsPlayed;
      }
      
-     public int getHandsPlayed() {
+     public void int getHandsPlayed() {
          return handsPlayed;
      }
      public void setMoney(double money) {
          this.money += money;
      }
-     public double getMoney() {
+     public void double getMoney() {
          return money;
      }
      public void getHandsWon (int handsWon) {
          this.handsWon += handsWon;
      }
-     public int getHandsWon() {
+     public void int getHandsWon() {
          return handsWon;
      }
 
